@@ -138,13 +138,19 @@ function Start-Service {
     # Set window title via $host.UI.RawUI.WindowTitle before running command
     $fullCmd = "`$host.UI.RawUI.WindowTitle = '$Title'; $Command"
     Start-Process $Shell -ArgumentList "-NoExit", "-Command", $fullCmd
-    Start-Sleep -Milliseconds 600
+    Start-Sleep -Milliseconds 1000
     Write-OK "Opening: $Title"
 }
 
 Start-Service `
     -Title   "SCGpipeline - Backend" `
     -Command "Set-Location '$ProjectRoot'; uv run uvicorn app.main:app --reload"
+    
+    if (-not $NoMLflow) {
+        Start-Service `
+            -Title   "SCGpipeline - MLflow" `
+            -Command "Set-Location '$ProjectRoot'; uv run mlflow ui --backend-store-uri '.\mlruns' --host 127.0.0.1 --port 5000"
+    }
 
 Start-Service `
     -Title   "SCGpipeline - Celery" `
@@ -153,12 +159,6 @@ Start-Service `
 Start-Service `
     -Title   "SCGpipeline - Frontend" `
     -Command "Set-Location '$ProjectRoot\frontend'; npm run dev"
-
-if (-not $NoMLflow) {
-    Start-Service `
-        -Title   "SCGpipeline - MLflow" `
-        -Command "Set-Location '$ProjectRoot'; uv run mlflow ui --port 5000"
-}
 
 if ($LlmProvider -eq "ollama") {
     Start-Service `
