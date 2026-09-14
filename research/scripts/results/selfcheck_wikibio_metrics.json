@@ -1,0 +1,27 @@
+{
+  "config": {
+    "device": "cuda",
+    "limit": null,
+    "n_records": 238,
+    "dataset": "potsawee/wiki_bio_gpt3_hallucination"
+  },
+  "sentence_level": {
+    "auc_pr_nonfact": 92.50409136846889,
+    "auc_pr_nonfact_star": 45.346573718770145,
+    "auc_pr_factual": 66.14951803894064,
+    "n_sentences_total": 1908,
+    "n_sentences_nonfact_star_subset": 1632
+  },
+  "passage_level": {
+    "pearson": 74.12946856692386,
+    "spearman": 73.76879612777078,
+    "n_passages": 238
+  },
+  "paper_reference_nli": {
+    "auc_pr_nonfact": 92.5,
+    "auc_pr_nonfact_star": 45.17,
+    "auc_pr_factual": 66.08,
+    "pearson": 74.14,
+    "spearman": 73.78
+  }
+}

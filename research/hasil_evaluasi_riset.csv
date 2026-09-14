@@ -1,0 +1,6 @@
+wiki_id,avg_hallucination_score,sentence_scores,human_annotations
+62464,0.6391754746437073,"[0.63917547 0.63917547 0.63917547 0.63917547 0.63917547 0.63917547
+ 0.63917547 0.63917547 0.63917547]","['major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate']"
+49661,0.965831995010376,[0.965832 0.965832 0.965832 0.965832 0.965832 0.965832 0.965832 0.965832],"['minor_inaccurate', 'minor_inaccurate', 'minor_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate', 'major_inaccurate']"
+20483,0.26294103264808655,"[0.26294103 0.26294103 0.26294103 0.26294103 0.26294103 0.26294103
+ 0.26294103 0.26294103 0.26294103]","['minor_inaccurate', 'minor_inaccurate', 'accurate', 'minor_inaccurate', 'minor_inaccurate', 'minor_inaccurate', 'major_inaccurate', 'minor_inaccurate', 'minor_inaccurate']"
