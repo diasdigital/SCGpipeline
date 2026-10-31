@@ -1,0 +1,69 @@
+{
+  "device": "cuda",
+  "n_passages": 238,
+  "n_sentences": 1908,
+  "sec_per_pair": 0.06470589830815417,
+  "results": [
+    {
+      "N": 1,
+      "NonFact": 88.05,
+      "NonFactStar": 38.53,
+      "Factual": 55.42,
+      "Pearson": 64.24,
+      "Spearman": 63.8,
+      "est_nli_sec_per_passage": 0.52
+    },
+    {
+      "N": 2,
+      "NonFact": 89.98,
+      "NonFactStar": 40.17,
+      "Factual": 63.06,
+      "Pearson": 71.39,
+      "Spearman": 72.05,
+      "est_nli_sec_per_passage": 1.04
+    },
+    {
+      "N": 3,
+      "NonFact": 90.99,
+      "NonFactStar": 41.22,
+      "Factual": 63.98,
+      "Pearson": 72.31,
+      "Spearman": 73.28,
+      "est_nli_sec_per_passage": 1.56
+    },
+    {
+      "N": 5,
+      "NonFact": 91.71,
+      "NonFactStar": 42.63,
+      "Factual": 65.34,
+      "Pearson": 73.38,
+      "Spearman": 74.02,
+      "est_nli_sec_per_passage": 2.59
+    },
+    {
+      "N": 10,
+      "NonFact": 92.2,
+      "NonFactStar": 44.04,
+      "Factual": 66.23,
+      "Pearson": 74.66,
+      "Spearman": 74.3,
+      "est_nli_sec_per_passage": 5.19
+    },
+    {
+      "N": 20,
+      "NonFact": 92.5,
+      "NonFactStar": 45.35,
+      "Factual": 66.15,
+      "Pearson": 74.13,
+      "Spearman": 73.77,
+      "est_nli_sec_per_passage": 10.37
+    }
+  ],
+  "table1_reference_N20": {
+    "NonFact": 92.5,
+    "NonFactStar": 45.35,
+    "Factual": 66.15,
+    "Pearson": 74.13,
+    "Spearman": 73.77
+  }
+}
